@@ -1,0 +1,22 @@
+[
+    {
+        "_id":{
+            "uid":"000001"
+        },
+        "email":"iniemail@gmail.com",
+        "password":"inipasswordnya",
+        "name":"ini nama user",
+        "address":"",
+        "ipl_data":""
+    },
+    {
+        "_id":{
+            "uid":"000002"
+        },
+        "email":"iniemail2@gmail.com",
+        "password":"inipasswordnya",
+        "name":"ini nama user 2",
+        "address":"",
+        "ipl_data":""
+    }
+]

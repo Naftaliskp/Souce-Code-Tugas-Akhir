@@ -1,0 +1,10 @@
+###### PYTHON VER 3.10.12 ######
+tensorflow==2.15.0
+tf_keras==2.15.1
+torch==2.2.1+cu121
+keras==2.15.0
+PySastrawi
+scikit-learn
+pandas
+matplotlib
+scipy==1.11.4

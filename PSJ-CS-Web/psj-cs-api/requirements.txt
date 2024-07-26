@@ -1,0 +1,7 @@
+Flask
+Flask-RESTful
+Flask-SQLAlchemy
+mysqlclient
+SQLAlchemy
+flask_cors
+mysql-connector-python
