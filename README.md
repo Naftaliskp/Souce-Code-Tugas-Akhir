@@ -1,68 +1,72 @@
-# PSJ-CS-WEB
+## Requirements Chatbot-Website
+Flask
+Flask-RESTful
+Flask-SQLAlchemy
+mysqlclient
+SQLAlchemy
+flask_cors
+mysql-connector-python
 
-This repository is dedicated to PSJ-CS-WEB, a project focused on implementing chatbot technology to assist management team of a home cluster maintain the resident with the complain, IPL checking and many more.
+## Website
 
-## Pre-requistites
+### Front-End
+"dependencies": {
+        "axios": "^1.1.3",
+        "bootstrap": "^5.2.2",
+        "cookie-cutter": "^0.2.0",
+        "datatables.net": "^2.0.8",
+        "datatables.net-bs5": "^2.0.8",
+        "jquery": "^3.7.1",
+        "react": "^18.3.1",
+        "react-bootstrap": "^2.6.0",
+        "react-dom": "^18.3.1",
+        "react-icon": "^1.0.0",
+        "react-icons": "^4.12.0",
+        "react-redux": "^8.0.5",
+        "react-router-dom": "^6.4.3",
+        "redux": "^4.2.0",
+        "redux-thunk": "^2.4.2",
+        "sweetalert2": "^11.4.8",
+        "sweetalert2-react-content": "^5.0.7"
+      },
+      "devDependencies": {
+        "@types/react": "^18.0.24",
+        "@types/react-dom": "^18.0.8",
+        "@vitejs/plugin-react": "^2.2.0",
+        "vite": "^3.2.3"
+      }
 
-1. clone the repository
-2. install the requirement for chatbot in [psj-cs-api/chatbot/requirement.txt](psj-cs-api/chatbot/requirement.txt)
-3. install the requirement for api in [psj-cs-api/requirements.txt](psj-cs-api/requirements.txt)
-4. install the package required for psj-web-admin and psj-web-user which is in file package.json in each folder
+### Back-End
+"packages": {
+    "": {
+      "name": "backend",
+      "version": "1.0.0",
+      "license": "ISC",
+      "dependencies": {
+        "bcrypt": "^5.1.1",
+        "bcryptjs": "^2.4.3",
+        "cookie-parser": "^1.4.6",
+        "express": "^4.19.2",
+        "jsonwebtoken": "^9.0.2",
+        "mysql": "^2.18.1"
+      }
+    },
 
-## How to run the website
-
-1. open terminal in this project directory and run the api at psj-cs-api folder
-
-```bash
-cd psj-cs-api
-python main.py
-```
-
-1. open new terminal in this project directory and run admin web at psj-web-admin folder
-
-```bash
-cd psj-web-admin
-npm run host
-```
-
-1. access the admin web using provided url ip and port
-2. open another new terminal in this project directory and run user web at psj-web-user folder
-
-```bash
-cd psj-web-user
-npm run host
-```
-
-1. access the user web using provided url ip and port
-
-## PSJ-WEB-ADMIN
-
-The admin web interface includes several features designed to assist administrators in managing the system efficiently. Key features include:
-
-- **Maintain Resident User Accounts**: Admins can create, update, and delete resident user accounts to ensure accurate and up-to-date user information.
-- **Manage Complaints**: Admins can view, address, and resolve complaints submitted by resident users, facilitating effective issue tracking and resolution.
-- **Create Information Posts**: Admins can create and publish information posts to communicate important updates and announcements to residents.
-- **Chat with Chatbot**: Admin can interact with a chatbot for assistance with obtaining information about cluster.
-
-## PSJ-WEB-USER
-
-The user web interface offers several features designed to enhance the user experience and facilitate easier management of personal tasks. Key features include:
-
-- **Maintain and Check IPL**: Users can view their environmental management fees (IPL) easily.
-- **Submit Complaints**: Users can submit complaints directly through the web interface, ensuring that their issues are promptly communicated to the management team.
-- **Chat with Chatbot**: Users can interact with a chatbot for assistance with obtaining information about cluster.
-
-## How to train your own chatbot model
-
-1. Prepare a dataset containing a list of input questions, tags, and labels.
-2. Create a folder on the drive.
-3. Place the dataset in the created drive folder.
-4. Run the `lstm.ipynb` in the folder, including the following steps:
-    - Install and import libraries.
-    - Preprocessing.
-    - Word embedding.
-    - Model training.
-    - Evaluation.
-5. The output should be a file in HDF5 format.
-6. Repeat the same steps for other comparison models.
-7. Compare the results of all the models.
+## Model Training Chatbot
+sastrawi
+os
+collections
+re
+string
+pickle
+csv
+io
+future: 0.18.3
+gensim: 4.3.3
+keras: 2.15.0
+tensorflow: 2.15.0
+numpy: 1.25.2
+pandas: 2.0.3
+matplotlib: 3.7.1
+requests: 2.31.0
+torch: 2.0.1
